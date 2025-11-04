@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chapel for His Deliverance Ministries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Styles.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <img src="Images/Logo/wmremove-transformed-removebg-preview.png" alt="CDM logo" class="brand-logo" />
+        <span class="brand-name">Chapel for His<br/>Deliverance Ministries</span>
+      </a>
+
+      <nav class="menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#give" class="btn btn--ghost">Give</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+
+      <button class="burger" aria-controls="mobile-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <nav id="mobile-menu" class="mobile-drawer" aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#give">Give</a>
+      <a href="#contact" class="cta">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" role="banner">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="Images/pexels-jibarofoto-2774570.jpg" alt="" />
+      <div class="overlay"></div>
+      <div class="gradient"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="kicker">Welcome</p>
+      <h1>Building People. Building Community.</h1>
+      <p class="lead">A house of prayer and compassion serving Soul City and beyond.</p>
+      <div class="actions">
+        <a href="#give" class="btn btn--primary">Donate</a>
+        <a href="#about" class="btn btn--light">Learn More</a>
+      </div>
+    </div>
+  </section>
+  <main>
+    <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="split">
+        <div>
+          <h2>About Us</h2>
+          <p>Chapel for His Deliverance Ministries is a Christ-centred church committed to prayer, discipleship, and practical community care. We exist to see people restored, families strengthened, and communities transformed by the Gospel.</p>
+          <div class="pill-grid">
+            <div class="pill"><strong>Mission:</strong> We aim to be a foundation and resource for the positive
+development and growth of the individual and community life. We will work alongside all
+groups within the community, ensuring a welcoming and safe environment where all
+individuals are valued, irrespective of age, gender, ethnic origin, sexual orientation, disability,
+appearance or marital status.</div>
+            <div class="pill"><strong>Vision:</strong> A praying, generous, multi-generational church that impacts our city.</div>
+            <div class="pill"><strong>Core Values:</strong> Prayer • Word • Compassion • Integrity • Excellence</div>
+          </div>
+        </div>
+        <div class="about-card">
+          <img src="Images/PastorPic2.jpg" alt="About CDM">
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!--Programs Section-->
+    <section id="programs" class="section alt">
+    <div class="container">
+      <h2>Our Programs</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Youth & Discipleship</h3>
+          <p>Mentoring, leadership training, and youth gatherings that build identity and purpose.</p>
+        </article>
+        <article class="card">
+          <h3>Compassion & Relief</h3>
+          <p>Food parcels, blankets, school support, and crisis assistance for families in need.</p>
+        </article>
+        <article class="card">
+          <h3>Family & Prayer</h3>
+          <p>Weekly prayer meetings, home groups, and pastoral care for marriages and families.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="masonry">
+        <img src="Images/WhatsApp Image 2025-10-31 at 22.02.56_3b195dfe.jpg" alt="ministry photo" loading="lazy"/>
+        <img src="Images/WhatsApp Image 2025-10-31 at 22.02.57_832e5b1d.jpg" alt="ministry photo" loading="lazy"/>
+        <img src="Images/WhatsApp Image 2025-10-31 at 22.02.57_36a6b29b.jpg" alt="ministry photo" loading="lazy"/>
+        <img src="Images/WhatsApp Image 2025-10-31 at 22.02.56_abcaced3.jpg" alt="ministry photo" loading="lazy"/>
+        <img src="Images/WhatsApp Image 2025-10-31 at 22.02.56_6266af15.jpg" alt="ministry photo" loading="lazy"/>
+        <img src="Images/WhatsApp Image 2025-10-31 at 22.02.55_dc8a1728.jpg" alt="ministry photo" loading="lazy"/>
+      </div>
+    </div>
+  </section>
+    <!-- GIVE -->
+    <section id="give" class="section-1">
+      <div class="container">
+        <h1>Give</h1>
+        <h2>For where your treasure is, there your heart will be also.</h2>
+        <h5>Matthew 6:21</h5>
+        <p>Because of your faithful giving, hearts are being reached and lives are being transformed as more people encounter the love and truth of Jesus Christ.</p>
+        <div id="paypal-button-container"></div>
+       <h3>Give online (PayPal)</h3>
+<p><em>Cards accepted via PayPal. Enter an amount and click Donate.</em></p>
+
+<div class="give-online-box">
+
+    <label for="amount" class="label amount-label">Amount</label>
+
+    <input id="amount" 
+           type="number" 
+           step="0.01" 
+           min="5" 
+           value="25.00" 
+           class="input amount-input" />
+
+    <!-- Your PayPal Button -->
+    <div id="paypal-button-container"></div>
+
+    <!-- Give Offering Button -->
+    <a class="btn btn--primary give-btn"
+       href="https://www.paypal.com/donate/?hosted_button_id=YOUR_HOSTED_ID"
+       target="_blank" 
+       rel="noopener">
+       Give Offering
+    </a>
+
+</div>
+
+        <div class="give-card">
+          <h3>Pay using Direct EFT</h3>
+          <ul>
+            <li><strong>Account Name:</strong> Chapel for His Deliverance Ministries</li>
+            <li><strong>Bank:</strong> FNB business</li>
+            <li><strong>Account No.:</strong> 63107787640</li>
+            <li><strong>Branch Code:</strong> 256755</li>
+            <li><strong>Reference:</strong> YourName–Donation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+<!-- GET IN TOUCH SECTION -->
+<section id="get-in-touch" class="git-section">
+  <div class="container git-container">
+
+    <h2 class="git-title">Get In Touch</h2>
+    <p class="git-sub">We'd love to hear from you. Fill out the form below to get started.</p>
+
+    <form class="git-form" 
+          id="contactForm" 
+          action="https://formsubmit.co/innocentubah17@gmail.com" 
+          method="POST">
+
+      <!-- FormSubmit settings -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <label for="name" class="git-label">Full Name</label>
+      <input type="text" id="name" name="name" class="git-input" required>
+
+      <label for="email" class="git-label">Email Address</label>
+      <input type="email" id="email" name="email" class="git-input" required>
+
+      <label for="message" class="git-label">Message</label>
+      <textarea id="message" name="message" class="git-textarea" required></textarea>
+
+      <button type="submit" class="git-btn">SEND</button>
+
+    </form>
+  </div>
+</section>
+
+   <!-- CONTACT / FOOTER BAND -->
+<section id="contact" class="footer-band">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <h4>Our Vision</h4>
+        <p>Inspiring everyone to love God, love others as ourselves, and impact the world for Christ.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Service Times</h4>
+        <p><strong>Sunday Service</strong><br>In-Person From: 09:00am-13:00pm</p>
+        <p><strong>Mid-week Prayer</strong><br>Wednesdays :17:00pm -19:00pm <br>Thursdays Counseling :10:00am-4:00pm</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p><a href="tel:+27871533944">+27 87 153 3944</a><br>
+           <a href="tel:+27710065944">+27 71 006 5944</a><br>
+           <a href="mailto:innocentubah17@gmail.com">innocentubah17@gmail.com</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-inline">
+          <a class="social-ghost" href="https://www.facebook.com/Chapel for his deliverance ministries" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="social-ghost" href="https://wa.me/27710065944" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <div class="container small">
+      <p>© <span id="year"></span> Chapel for His Deliverance Ministries. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- PayPal SDK -->
+  <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+  <script src="script.js"></script>
+</body>
+</html>
