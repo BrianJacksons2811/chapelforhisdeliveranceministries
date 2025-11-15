@@ -118,55 +118,42 @@ appearance or marital status.</div>
     </div>
   </section>
     <!-- GIVE -->
-    <section id="give" class="section-1">
-      <div class="container">
-        <h1>Give</h1>
-        <h2>For where your treasure is, there your heart will be also.</h2>
-        <h5>Matthew 6:21</h5>
-        <p>Because of your faithful giving, hearts are being reached and lives are being transformed as more people encounter the love and truth of Jesus Christ.</p>
-        <p>Your giving goes towards the building projects, community centers, and outreaches.</p>
-        <div id="paypal-button-container"></div>
-       <h3>Give online (PayPal)</h3>
-<p><em>Cards accepted via PayPal. Enter an amount and click Donate.</em></p>
+  <!-- GIVE -->
+<section id="give" class="section-1">
+  <div class="container">
+    <h1>Give</h1>
+    <h2>For where your treasure is, there your heart will be also.</h2>
+    <h5>Matthew 6:21</h5>
+    <p>Because of your faithful giving, hearts are being reached and lives are being transformed as more people encounter the love and truth of Jesus Christ.</p>
+    <p>Your giving goes towards the building projects, community centers, and outreaches.</p>
 
-<div class="give-online-box">
+    <div class="give-online-box" style="margin-top: 40px;">
+      <h3>Give Online (PayGate)</h3>
+      <p><em>Donate securely via card through PayGate</em></p>
 
-    <label for="amount" class="label amount-label">Amount</label>
+      <form method="POST" action="https://secure.paygate.co.za/payweb3/process.trans" target="_blank" style="max-width: 400px; margin: 0 auto;">
+        <label for="pg-amount" class="label amount-label">Donation Amount (ZAR)</label>
+        <input id="pg-amount" name="AMOUNT" type="number" step="1" min="5" value="100" class="input amount-input" />
+        
+        <?php include("generate_checksum.php"); ?>
 
-    <input id="amount" 
-           type="number" 
-           step="0.01" 
-           min="5" 
-           value="25.00" 
-           class="input amount-input" />
-
-    <!-- Your PayPal Button -->
-    <div id="paypal-button-container"></div>
-
-    <!-- Give Offering Button -->
-    <a class="btn btn--primary give-btn"
-       href="https://www.paypal.com/donate/?hosted_button_id=YOUR_HOSTED_ID"
-       target="_blank" 
-       rel="noopener">
-       Give Offering
-    </a>
-
-</div>
-
-        <div class="give-card">
-          <h3>Pay using Direct EFT</h3>
-          <ul>
-            <li><strong>Account Name:</strong> Chapel for His Deliverance Ministries</li>
-            <li><strong>Bank:</strong> FNB business</li>
-            <li><strong>Account No.:</strong> 63152332416</li>
-            <li><strong>Branch Code:</strong> 256755</li>
-            <li><strong>Reference:</strong> YourName–Donation</li>
-          </ul>
-        </div>
-      </div>
+        <button type="submit" class="btn btn--primary give-btn">Donate via PayGate</button>
+      </form>
     </div>
-      </div>
-    </section>
+
+    <div class="give-card">
+      <h3>Pay using Direct EFT</h3>
+      <ul>
+        <li><strong>Account Name:</strong> Chapel for His Deliverance Ministries</li>
+        <li><strong>Bank:</strong> FNB Business</li>
+        <li><strong>Account No.:</strong> 63152332416</li>
+        <li><strong>Branch Code:</strong> 256755</li>
+        <li><strong>Reference:</strong> YourName–Donation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+  </main>
 
 <!-- GET IN TOUCH SECTION -->
 <section id="get-in-touch" class="git-section">
